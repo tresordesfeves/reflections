@@ -1,0 +1,32 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+the commdnd used for Mac is diff (ine the comamd line found in applications/utilites). Suppressed lines (-)are listed right above the new lines (+)in order of appearance in both original and edited files. Thus the comparison made easier. 
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+- allows users to restore an old version if necessary
+- allows to debug more efficiently while helping o retrieve the  version where the bug originated.
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google?
+
+Manualcommits have to follow common sense and simple rules. Auto save avoid information loses but are at regular times  without waiting for logical steps in the project coding.  Git commits are documented by a short message for future reference where Auto Save are not.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+In programming, differents files (programs or functions) are ofthen linked. Thus the necessity to commit all these files simultameously. in Google doc the vast majority of the files are stand alone and do not need a paralel auto save. 
+
+How can you use the commands git log and git diff to view the history of files?
+git log gives you a  dated log with light comments on each commit.
+these comments are helpfull to find which commit might have to be debugged. From there get diff previous-commit# suspicious-commit# will point out the diff.
+git diff -stat tell us how nany lines where added or deleted betwenn two commits. 
+
+How might using version control make you more confident to make changes that
+could break something?
+
+   to find the commit that introduce a bug: use git log, then use git checkout using the number of the commit you supose introduce the bug. Execute this commit.
+   - repeat till you find the faulty commit (). Once you finde the culprit you can ru a git diff between it and its predecessor.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
