@@ -7,8 +7,15 @@ git status to get the repository status.
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
+Files to be comiited nest are to be placed in the staging area (git add). 
+A file can be removed from the staging area (git reset filename).
+
+git commit -m "Commit message" will automaticaly add the commit message without using a text editor (sublime for example).
+( as opposed to git commit that will prompt you to the text editor)
+
+
 How can you use the staging area to make sure you have one commit per logical
-change?
+change? 
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
