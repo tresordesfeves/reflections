@@ -1,6 +1,11 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
-git push origin master 
+to establish the link between my local repos and my remote GITHUB:
+> git remote add origin https://github.com/tresordesfeves/reflections.git
+then to verify that origin (the "local transfer chamber" has been created:
+> git remote (result will be "origin")
+then to ush the branch (here the branch to push is "master")
+>git push origin master 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
