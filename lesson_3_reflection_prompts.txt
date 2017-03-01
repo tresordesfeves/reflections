@@ -6,6 +6,9 @@ then to verify that origin (the "local transfer chamber" has been created:
 > git remote (result will be "origin")
 then to ush the branch (here the branch to push is "master")
 >git push origin master 
+same concept to pull from the remote into the local
+>git pull origin master 
+
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
