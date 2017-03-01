@@ -7,9 +7,8 @@ git status to get the repository status.
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-Files to be comiited nest are to be placed in the staging area (git add). 
+Files to be commited next are to be placed in the staging area (git add). 
 A file can be removed from the staging area (git reset filename).
-
 git commit -m "Commit message" will automaticaly add the commit message without using a text editor (sublime for example).
 ( as opposed to git commit that will prompt you to the text editor)
 
@@ -17,13 +16,62 @@ git commit -m "Commit message" will automaticaly add the commit message without 
 How can you use the staging area to make sure you have one commit per logical
 change? 
 
+First make sure to be in the most current commit (git checkout master)
+IMPORTANT: the staging area is a copy of the most recent commits until you add changes to it.
+To compare the staging area to the working area : use git diff without any argument. This will show all the changes made that have not been added to the staging area yet.
+to compare the staging area to the last commit : git diff --staged
+git reset --hard discard any changes in the staging area and in THE WORKING DIRECTORY (as opposed to git reset which only discard the changes in the staging area)
+the git commit -m "commit message " 
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+In demoing experimental versions, while not slowing the progesses of the the main branch .
+
+git branch without any argument lists all the existing branches, a * appears next the the branch currently checked out.
+git branch newbranchname creates a new branch. 
+git checkout newbranchname  to check out the new branch
+(git checkout -b newbranchname  combines the 2 previous commands )
+
 How do the diagrams help you visualize the branch structure?
+
+git log --graph --oneline branchname1 branchenameN
+After using git checkout pastcommitnumber, you can start a new branch by using:
+git checkout -b newbranchname . 
+your are not in the head detach mode anymore, and the head is now folowing your next commits.
+
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+before merging, it esae beterre to checkout the branch yout want to remain on (here master)
+git merge master name_of_the-branch_to_merge_into_master
+
+to show the diff between a commit and its parent, your don't need to find its parent just use : git show commit_number  (useful because after a merge, the commits come form different branches and are listed by sequential order indepedently of their authors, (so commits are not necessarely preceeded by theirs parents) 
+>git show commit_number will show all the difference between a commit and its parent.
+> git show head  will show the diffrence brought by the last commit (on the head), wether its a merge or just a file or several files  edit.
+
+how to delete the label of a branch which became useless once merged : git branch -d name_branch_to delete
 
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+Resolving merging conflicts : parts of the files that have been modified by both merging branches will prevent the merge from happening. (NB before typing the marge command, the head has to be moved to the branch (use checkout Name_of_the_branch, here easy-mode)
+See example below : (udates easy-mode branch by puling in the master branch into teh easymode branch)
+>git merge master easy-mode
+Auto-merging game.js
+CONFLICT (content): Merge conflict in game.js
+Automatic merge failed; fix conflicts and then commit the result
+
+Once the conflict file has been edited and saved then run 
+>git status
+> git add name_of_the_modify_file
+either run "git commit")
+  (use "git merge --abort" to abort the merge)
+>git log -n number: will only show the last number commits
+
+
+
+
+
+
+
+
