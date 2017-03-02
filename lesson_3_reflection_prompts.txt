@@ -1,24 +1,39 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
-to establish the link between my local repos and my remote GITHUB:
+how to establish the link between my local repos and my remote GITHUB:
 > git remote add origin https://github.com/tresordesfeves/reflections.git
 then to verify that origin (the "local transfer chamber" has been created:
 > git remote (result will be "origin")
+> git remote -v (-v like in verbose) will show you the patch between origin and the remote GITHUB repo.
 then to ush the branch (here the branch to push is "master")
->git push origin master 
+>git push origin master ( you have to mention which brach you want to push : here for example "master")
 same concept to pull from the remote into the local
 >git pull origin master 
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
+- branch is done internaly on one repo ( either local or remoted)
+- fork is a cloning done on Github ( from one user to an other)
+- clone is from GitHub to local ( or local to local)
 
-    Fill in your answer here
+To clone you have to cd into the the directory where you want the new repo ( a clone of the original repo) to be created: the new directory (repo) will be created automatically . (here for example we cd into version-control, then we cloned receipe from our remote on Github into our local : automaticaly a sub directory (receipe) was created in version-control.
+When you clone a repo from Github into your local repos, the remote is automaticaly created (and can be used for future push or pull) (you can check it out by using the >remote command to see the link betwew origin and remote)
 
+How to see the difference beween local and remote?
+>git status
+        On branch master
+        Your branch is ahead of 'origin/master' by 1 commit.
+        (use "git push" to publish your local commits)
+        nothing to commit, working tree clean
+then to udate the remote use :
+>git push origin master 
+
+To authorize collaborator to push to your remote directory/repo: go onto the remote? setting/add collabotators
+    
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
