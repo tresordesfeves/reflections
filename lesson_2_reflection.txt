@@ -43,7 +43,7 @@ your are not in the head detach mode anymore, and the head is now folowing your 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
-before merging, it esae beterre to checkout the branch yout want to remain on (here master)
+before merging, to checkout the branch YOU WANT TO REMAIN ON (here master)
 git merge master name_of_the-branch_to_merge_into_master
 
 to show the diff between a commit and its parent, your don't need to find its parent just use : git show commit_number  (useful because after a merge, the commits come form different branches and are listed by sequential order indepedently of their authors, (so commits are not necessarely preceeded by theirs parents) 
@@ -62,6 +62,10 @@ CONFLICT (content): Merge conflict in game.js
 Automatic merge failed; fix conflicts and then commit the result
 
 Once the conflict file has been edited and saved then run 
+                                                         >git add (the conflictual file (s) )
+                                                         > git commit
+
+>git merge --abort : will bring everything back to what it was before the request
 >git status
 > git add name_of_the_modify_file
 either run "git commit")

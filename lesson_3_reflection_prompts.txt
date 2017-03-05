@@ -36,6 +36,15 @@ To authorize collaborator to push to your remote directory/repo: go onto the rem
     
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
+a local copy of the remote bramch is labeled origin/master
+Local copy of he remote branch, local branch and remote branch are identical right after a pull or a push.
+On the contrary a >git fetch origin    will only updqte the locql copy of the remte branch, NOT THE LOCAL BRANCH ITSELF!!!
+>git fetch origin  FOLOWED BY
+>git merge master origin/master IS THE SAME THEN
+>git pull origin master
+
+>git log origin/master will list all the comits of the local copy of the remote when it was laste updated (meaning after the ast, push or pull or fetch)
+
 
     Fill in your answer here
 
