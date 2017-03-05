@@ -76,30 +76,6 @@ either run "git commit")
   (use "git merge --abort" to abort the merge)
 >git log -n number: will only show the last number commits
 
-on GitHub : a pull request is askcollaborators to merge a secondary branch into master (WARNING: the pull rquest button offers you by default to pull into the original repo the master branch was forked from ; make sure you select your repo and not the original one from an other author ).
-pushing a branch from local to the same remoted branch on GitHub AUTOMATICALY UPDATE THE PULL REQUEST(S) attached to this branch.
-WORK FLOW:
-- when working locally and willing to share a change with yur team for approval:
-  1) create a new branch (different-oil)
-  2) checkout the new branch
-  3) do the modifs to be approved on this new branch
-  4) add 
-  5) commit
-  6) push this new branch : push origin different-oil (assuming that the remote link to the repo as been created previously (usualy by a clone from GitHub to my local))
-  7) on GitHub : checkout the new branch (different oil)
-  8) use the pull request button
-  9) the team will be messaged of my pool request qnd will comment on it
-  10) if the team approves then i can just validate the "merge" (pull request)
-  11)if my modif needs more work: go back in the new branch (different-oil)
-  12) adress the changes 
-  13) push the branch on GitHub (it will update the pull request automaticaly
-  14) validate the pull request on Gh
-  150 merge my new branch ito master to update master localy
-  13) merge my changes into master 
-
-
-Workflow summary from Udacity:
-        "You just saw that the workflow when making changes in a separate branch is more complicated than working directly in master, especially when you need to stay up-to-date with changes others are making. Rather than simply pulling and pushing, you need to pull changes into your local master branch, merge the local master into your branch (different-oil, in our case), then push your branch to the remote before finally merging your branch into master, either locally or on GitHub "
 
 
 
