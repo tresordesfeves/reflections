@@ -25,7 +25,7 @@ How might using version control make you more confident to make changes that
 could break something?
 
    to find the commit that introduce a bug: use git log, then use git checkout using the number of the commit you supose introduce the bug. Execute this commit.
-   - repeat till you find the faulty commit (). Once you finde the culprit you can ru a git diff between it and its predecessor.
+   - repeat till you find the faulty commit (). Once you find the culprit you can run git diff between it and its predecessor.
 
 Now that you have your workspace set up, what do you want to try using Git for?
 

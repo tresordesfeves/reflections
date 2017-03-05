@@ -12,8 +12,12 @@ A file can be removed from the staging area (git reset filename).
 git commit -m "Commit message" will automaticaly add the commit message without using a text editor (sublime for example).
 ( as opposed to git commit that will prompt you to the text editor)
 
+WARNING: a * shows nest to the bannch prompt when chnges have been made and not commited:
 
-How can you use the staging area to make sure you have one commit per logical
+                                 Glenwood (master) reflections $ 
+                                 Glenwood (master *) reflections $
+
+How can you use the stagging area to make sure you have one commit per logical
 change? 
 
 First make sure to be in the most current commit (git checkout master)
@@ -94,7 +98,8 @@ WORK FLOW:
   13) merge my changes into master 
 
 
-
+Workflow summary from Udacity:
+        "You just saw that the workflow when making changes in a separate branch is more complicated than working directly in master, especially when you need to stay up-to-date with changes others are making. Rather than simply pulling and pushing, you need to pull changes into your local master branch, merge the local master into your branch (different-oil, in our case), then push your branch to the remote before finally merging your branch into master, either locally or on GitHub "
 
 
 
