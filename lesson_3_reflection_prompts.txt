@@ -5,7 +5,7 @@ how to establish the link between my local repos and my remote GITHUB:
 then to verify that origin (the "local transfer chamber" has been created:
 > git remote (result will be "origin")
 > git remote -v (-v like in verbose) will show you the patch between origin and the remote GITHUB repo.
-then to ush the branch (here the branch to push is "master")
+then to push the branch (here the branch to push is "master")
 >git push origin master ( you have to mention which branch you want to push : here for example "master")
 same concept to pull from the remote into the local
 >git pull origin master 
@@ -16,7 +16,7 @@ use one instead of another?
 - fork is a cloning done on Github ( from one user to an other)
 - clone is from GitHub to local ( or local to local)
 
-To clone you have to cd into the the directory where you want the new repo ( a clone of the original repo) to be created: the new directory (repo) will be created automatically . (here for example we cd into version-control, then we cloned receipe from our remote on Github into our local :(copy the URL in the GitHub repo ("clone or Download" green button))
+To clone you have to cd into the the directory where you want the new repo ( a clone of the original repo) to be created: the new directory (repo) will be created automatically . (here for example we cd into version-control, then we cloned recipe from our remote on Github into our local :(copy the URL in the GitHub repo ("clone or Download" green button))
     >git clone https://github.com/tresordesfeves/recipes.git
  automaticaly a sub directory (recipes) was created in version-control. and you got cd into this new directory.
 
@@ -79,3 +79,18 @@ WORK FLOW:
 
 Workflow summary from Udacity:
         "You just saw that the workflow when making changes in a separate branch is more complicated than working directly in master, especially when you need to stay up-to-date with changes others are making. Rather than simply pulling and pushing, you need to pull changes into your local master branch, merge the local master into your branch (different-oil, in our case), then push your branch to the remote before finally merging your branch into master, either locally or on GitHub "
+
+But since we are collaborating, THE MASTER ON GITHUB ON THE ORIGINAL BRANCH THAT WE FORKED MIGHT HAVE BEEN MODIFIED AFTER YOU CREATED THE PULL REQUEST.
+As you are working locally,  you need to create a remote for the original master on your local: just clone the original  master from Github onto your local master . by convention the remote is named upstream: 
+>> git remote add upstram https://github.com/coolaborativegithubproject/ORIGINALBRANCH
+and the a pull. You will then work to meger your the upstram/master on your local copy of YOUR GITHUB head branch you are traying to merge into the original branch .
+Once you have resole the conflict localy, then you can push your loal on YOUR Git Hub. the pull equest will be updated. And the merge will happen.
+UPSTREAM
+
+
+
+
+
+
+
+
