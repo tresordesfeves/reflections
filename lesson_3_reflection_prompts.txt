@@ -103,7 +103,7 @@ FIXING MISTAKES ON YOUR LOCAL REPO
         On branch master
         nothing to commit, working tree clean
         
-      “ gitt diff”  :
+      “ git diff”  :
         -> will be empty
     IMPORTANT : this cancellation is done without opening SUBLIME to edit “name_of_modified_file.ext “ . In other words no need to edit the file: Git handled the cancellation edition.
 
