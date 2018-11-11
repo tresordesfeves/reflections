@@ -84,8 +84,28 @@ But since we are collaborating, THE MASTER ON GITHUB ON THE ORIGINAL BRANCH THAT
 As you are working locally,  you need to create a remote for the original master on your local: just clone the original  master from Github onto your local master . by convention the remote is named upstream: 
 >> git remote add upstram https://github.com/coolaborativegithubproject/ORIGINALBRANCH
 and the a pull. You will then work to meger your the upstram/master on your local copy of YOUR GITHUB head branch you are traying to merge into the original branch .
-Once you have resole the conflict localy, then you can push your loal on YOUR Git Hub. the pull equest will be updated. And the merge will happen.
+Once you have resole the conflict localy, then you can push your loCal on YOUR Git Hub. the pull equest will be updated. And the merge will happen.
 UPSTREAM
+
+FIXING MISTAKES ON YOUR LOCAL REPO
+
+  1) on files that have been just modified but have not been added to the staging area yet:
+
+    step 1 : 
+    making sure that the modifications to cancel are there in the working directory :
+      ” git status" will tell you which is the last modified file and will offer to add it to staging area, file “git diff"  will show these modifications .
+  step 2 : 
+    cancelling the last modifications:
+      git checkout name_of_modified_file.ext 
+  step 3:
+    verifying that the cancellation happened 
+      ” git status" : 
+        On branch master
+        nothing to commit, working tree clean
+        
+      “ gitt diff”  :
+        -> will be empty
+    IMPORTANT : this cancellation is done without opening SUBLIME to edit “name_of_modified_file.ext “ . In other words no need to edit the file: Git handled the cancellation edition.
 
 
 
