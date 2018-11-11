@@ -4,7 +4,7 @@ how to establish the link between my local repos and my remote GITHUB:
 > git remote add origin https://github.com/tresordesfeves/reflections.git
 then to verify that origin (the "local transfer chamber" has been created:
 > git remote (result will be "origin")
-> git remote -v (-v like in verbose) will show you the patch between origin and the remote GITHUB repo.
+> git remote -v (-v like in verbose) will show you the path between origin and the remote GITHUB repo.
 then to push the branch (here the branch to push is "master")
 >git push origin master ( you have to mention which branch you want to push : here for example "master")
 same concept to pull from the remote into the local
@@ -13,7 +13,7 @@ same concept to pull from the remote into the local
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 - branch is done internaly on one repo ( either local or remoted)
-- fork is a cloning done on Github ( from one user to an other)
+- fork is a "cloning" done on Github ( from one user to an other)
 - clone is from GitHub to local ( or local to local)
 
 To clone you have to cd into the the directory where you want the new repo ( a clone of the original repo) to be created: the new directory (repo) will be created automatically . (here for example we cd into version-control, then we cloned recipe from our remote on Github into our local :(copy the URL in the GitHub repo ("clone or Download" green button))
