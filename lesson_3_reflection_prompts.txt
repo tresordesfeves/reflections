@@ -103,10 +103,21 @@ FIXING MISTAKES ON YOUR LOCAL REPO
         On branch master
         nothing to commit, working tree clean
         
-      “ git diff”  :
+      “ gita diff”  :
         -> will be empty
     IMPORTANT : this cancellation is done without opening SUBLIME to edit “name_of_modified_file.ext “ . In other words no need to edit the file: Git handled the cancellation edition.
 
+  2) on the commit message:
+
+      step 1: 
+      verifying the last commit message:
+        git log -1
+      step 2:
+      replacing the erroneous by a corect message:
+        git commit --amend -m "the new message" 
+      step 3: 
+      verifying the new commit message:
+        git log -1  
 
 
 
