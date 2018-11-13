@@ -94,7 +94,7 @@ FIXING MISTAKES ON YOUR LOCAL REPO (see on youtube in GiIt playlist)
 
     step 1 : 
     making sure that the modifications to cancel are there in the working directory :
-      ” git status" will tell you which is the last modified file and will offer to add it to staging area, file “git diff"  will show these modifications .
+      ” git status" will tell you which is the last modified file and will offer to add it to the staging area, file “git diff"  will show these modifications .
   step 2 : 
     cancelling the last modifications:
       git checkout name_of_modified_file.ext 
@@ -103,8 +103,7 @@ FIXING MISTAKES ON YOUR LOCAL REPO (see on youtube in GiIt playlist)
       ” git status" : 
         On branch master
         nothing to commit, working tree clean
-        
-      “ gita diff”  :
+      “ git diff”  :
         -> will be empty
     IMPORTANT : this cancellation is done without opening SUBLIME to edit “name_of_modified_file.ext “ . In other words no need to edit the file: Git handled the cancellation edition.
 
@@ -130,11 +129,16 @@ FIXING MISTAKES ON YOUR LOCAL REPO (see on youtube in GiIt playlist)
       step 3: 
       check that the file was properly added
         git status
-          the newly tracked file will be mentioned 
+          the newly tracked file will as "new"  be mentioned 
       step 4:
       add the file like if it was part of the last commit
-        git --amend
-        the editor wll open up, edit out what you don't want to keep , and keep what you want to be amended in the last commit.
+        git commit --amend
+        the editor wll open up, it will show the last commit then the new file : you can also edit the commit description. 
+      step 5 :
+        Once save, then a git status will not show the file as untracked, git log will overwrite the last commit with the new one.
+
+
+git commit --amend  WONT ADD a NEW commit but OVERWRITES the LAST commit
 
 
 
