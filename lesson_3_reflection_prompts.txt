@@ -87,7 +87,8 @@ and the a pull. You will then work to meger your the upstram/master on your loca
 Once you have resole the conflict localy, then you can push your loCal on YOUR Git Hub. the pull equest will be updated. And the merge will happen.
 UPSTREAM
 
-FIXING MISTAKES ON YOUR LOCAL REPO
+FIXING MISTAKES ON YOUR LOCAL REPO (see on youtube in GiIt playlist)
+
 
   1) on files that have been just modified but have not been added to the staging area yet:
 
@@ -117,7 +118,30 @@ FIXING MISTAKES ON YOUR LOCAL REPO
         git commit --amend -m "the new message" 
       step 3: 
       verifying the new commit message:
-        git log -1  
+        git log -1
+  3) on forgetting to track a file:
+      step 1:
+      finding out wich file are not tracked 
+        git status
+          the untracked file will be mentioned 
+      step 2:
+      adding the file in the staging area
+       git add <file_name.ext>
+      step 3: 
+      check that the file was properly added
+        git status
+          the newly tracked file will be mentioned 
+      step 4:
+      add the file like if it was part of the last commit
+        git --amend
+        the editor wll open up, edit out what you don't want to keep , and keep what you want to be amended in the last commit.
+
+
+
+
+
+
+
 
 
 
