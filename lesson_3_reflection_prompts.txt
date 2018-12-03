@@ -1,12 +1,26 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
+________________________________________________________
+An informal overview of a github page:
+
+  - list of the repos
+  - once in a repo:
+      upper left line: choose a branch
+        - once in a branch : list of the files
+            - click on "NN" commits (upper screen) to list all commits
+  - the HTTP Url for the sepcific remoted github repo can be retrived by clicking on the green "clone or dowmnload " button
+_________________________________________________________
+the name of a remote (for example "origin") is the name used withing a local repository to the repository on Github. Local repo and remoted don't have to have the same name
+_________________________________________________________
+
+
 how to establish the link between my local repos and my remote GITHUB:
 > git remote add origin https://github.com/tresordesfeves/reflections.git
 then to verify that origin (the "local transfer chamber" has been created:
 > git remote (result will be "origin")
 > git remote -v (-v like in verbose) will show you the path between origin and the remote GITHUB repo.
 then to push the branch (here the branch to push is "master")
->git push origin master ( you have to mention which branch you want to push : here for example "master")
+>git push origin master ( YOU HAVE TO MENTION WHICH BRANCH YOU WANT TO PUSH : here for example "master")
 same concept to pull from the remote into the local
 >git pull origin master 
 
@@ -139,6 +153,11 @@ FIXING MISTAKES ON YOUR LOCAL REPO (see on youtube in GiIt playlist)
 
 
 git commit --amend  WONT ADD a NEW commit but OVERWRITES the LAST commit
+ALL THESE CORRECTIONS SHOULD NOT BE DONE IF RHE BRANCH HAS ALREADY BEEN PUSHED TO SHARE WITH OTHER USERS
+https://github.com/tresordesfeves/recipes.git
+
+https://github.com/tresordesfeves/recipes
+
 
 
 
