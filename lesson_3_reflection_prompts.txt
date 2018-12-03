@@ -12,15 +12,15 @@ An informal overview of a github page:
 _________________________________________________________
 the name of a remote (for example "origin") is the name used withing a local repository to the repository on Github. Local repo and remoted don't have to have the same name
 _________________________________________________________
-
-
+Remember that remoted repo and local are only communicating THROUGH COMMITS : so what ever is not commited won't be pushed onto Github. Alos remember that only the branch you are pushing ( all the way to its last commit will be pushed)
+---------------------------------------------------------
 how to establish the link between my local repos and my remote GITHUB:
 > git remote add origin https://github.com/tresordesfeves/reflections.git
 then to verify that origin (the "local transfer chamber" has been created:
 > git remote (result will be "origin")
 > git remote -v (-v like in verbose) will show you the path between origin and the remote GITHUB repo.
 then to push the branch (here the branch to push is "master")
->git push origin master ( YOU HAVE TO MENTION WHICH BRANCH YOU WANT TO PUSH : here for example "master")
+>git push origin master ( YOU HAVE TO MENTION WHICH BRANCH YOU WANT TO PUSH : here for example "master")q
 same concept to pull from the remote into the local
 >git pull origin master 
 
