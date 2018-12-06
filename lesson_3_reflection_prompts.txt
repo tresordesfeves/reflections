@@ -8,7 +8,7 @@ An informal overview of a github page:
       upper left line: choose a branch
         - once in a branch : list of the files
             - click on "n" commits (upper screen) to list all n commits
-  - the HTTP Url for the specific remoted github repo can be retrived by clicking on the green "clone or dowmnload " button
+  - the HTTP Url for the specific remoted github repo can be retrieved by clicking on the green "clone or dowmnload " button
 _________________________________________________________
 the name of a remote (for example "origin") is the name used within a local repository for the repository on Github. Local  and remoted repos don't have to have the same name
 _________________________________________________________
