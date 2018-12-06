@@ -10,9 +10,9 @@ An informal overview of a github page:
             - click on "n" commits (upper screen) to list all n commits
   - the HTTP Url for the specific remoted github repo can be retrived by clicking on the green "clone or dowmnload " button
 _________________________________________________________
-the name of a remote (for example "origin") is the name used within a local repository for the repository on Github. Local repo and remoted don't have to have the same name
+the name of a remote (for example "origin") is the name used within a local repository for the repository on Github. Local  and remoted repos don't have to have the same name
 _________________________________________________________
-Remember that remoted repo and local are only communicating THROUGH COMMITS : so what ever is not commited won't be pushed onto Github. Also remember that only the branch you are pushing ( all the way to its last commit will be pushed)
+Remember that remoted and local repo are only communicating THROUGH COMMITS : so what ever is not commited won't be pushed onto Github. Also remember that only the branch you are pushing ( all the way to its last commit will be pushed)
 ---------------------------------------------------------
 how to establish the link between my local repos and my remote GITHUB:
 > git remote add origin https://github.com/tresordesfeves/reflections.git
