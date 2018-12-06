@@ -7,12 +7,12 @@ An informal overview of a github page:
   - once in a repo:
       upper left line: choose a branch
         - once in a branch : list of the files
-            - click on "NN" commits (upper screen) to list all commits
-  - the HTTP Url for the sepcific remoted github repo can be retrived by clicking on the green "clone or dowmnload " button
+            - click on "n" commits (upper screen) to list all n commits
+  - the HTTP Url for the specific remoted github repo can be retrived by clicking on the green "clone or dowmnload " button
 _________________________________________________________
-the name of a remote (for example "origin") is the name used withing a local repository to the repository on Github. Local repo and remoted don't have to have the same name
+the name of a remote (for example "origin") is the name used within a local repository for the repository on Github. Local repo and remoted don't have to have the same name
 _________________________________________________________
-Remember that remoted repo and local are only communicating THROUGH COMMITS : so what ever is not commited won't be pushed onto Github. Alos remember that only the branch you are pushing ( all the way to its last commit will be pushed)
+Remember that remoted repo and local are only communicating THROUGH COMMITS : so what ever is not commited won't be pushed onto Github. Also remember that only the branch you are pushing ( all the way to its last commit will be pushed)
 ---------------------------------------------------------
 how to establish the link between my local repos and my remote GITHUB:
 > git remote add origin https://github.com/tresordesfeves/reflections.git
@@ -97,8 +97,8 @@ Workflow summary from Udacity:
 But since we are collaborating, THE MASTER ON GITHUB ON THE ORIGINAL BRANCH THAT WE FORKED MIGHT HAVE BEEN MODIFIED AFTER YOU CREATED THE PULL REQUEST.
 As you are working locally,  you need to create a remote for the original master on your local: just clone the original  master from Github onto your local master . by convention the remote is named upstream: 
 >> git remote add upstram https://github.com/coolaborativegithubproject/ORIGINALBRANCH
-and the a pull. You will then work to meger your the upstram/master on your local copy of YOUR GITHUB head branch you are traying to merge into the original branch .
-Once you have resole the conflict localy, then you can push your loCal on YOUR Git Hub. the pull equest will be updated. And the merge will happen.
+and the a pull. You will then work to merge your the upstram/master on your local copy of YOUR GITHUB head branch you are trying to merge into the original branch .
+Once you have resolve the conflict localy, then you can push your loCal on YOUR Git Hub. the pull request will be updated. And the merge will happen.
 UPSTREAM
 
 FIXING MISTAKES ON YOUR LOCAL REPO (see on youtube in GiIt playlist)
